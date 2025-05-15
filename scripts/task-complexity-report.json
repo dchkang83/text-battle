@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "generatedAt": "2025-05-15T01:35:48.164Z",
+    "tasksAnalyzed": 12,
+    "thresholdScore": 5,
+    "projectName": "Taskmaster",
+    "usedResearch": false
+  },
+  "complexityAnalysis": [
+    {
+      "taskId": 1,
+      "taskTitle": "Supabase 프로젝트 설정 및 인증 시스템 구축",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down the Supabase authentication implementation task into detailed subtasks covering project setup, email/password authentication, social login integration, session management, and protected routes configuration.",
+      "reasoning": "This task involves setting up a Supabase project and implementing a complete authentication system. It requires understanding Supabase authentication APIs, implementing multiple auth methods, and integrating with Next.js. The complexity comes from handling different authentication flows and securing routes."
+    },
+    {
+      "taskId": 2,
+      "taskTitle": "데이터베이스 스키마 설계 및 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Create detailed subtasks for implementing the database schema, including table creation, relationships, RLS policies, indexes, and data validation rules for each entity in the system.",
+      "reasoning": "Database schema design requires careful planning of tables, relationships, and security policies. The task involves implementing complex Row Level Security policies, creating proper indexes, and ensuring data integrity. The schema needs to support multiple game features like battles, transactions, and user profiles."
+    },
+    {
+      "taskId": 3,
+      "taskTitle": "Next.js 프로젝트 구조 및 기본 UI 컴포넌트 개발",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide the Next.js project structure and UI component development task into subtasks covering project initialization, layout implementation, component library setup, responsive design, and theme configuration.",
+      "reasoning": "Setting up a Next.js project with App Router requires understanding the new routing paradigm and Server Components. Creating reusable UI components that are responsive and accessible adds complexity. The task involves architectural decisions that will impact the entire application."
+    },
+    {
+      "taskId": 4,
+      "taskTitle": "캐릭터 생성 시스템 구현",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Break down the character creation system into subtasks covering form UI implementation, validation logic, content filtering, and database integration with proper error handling.",
+      "reasoning": "This task involves creating a form with validation logic, implementing content filtering for inappropriate expressions, and integrating with the database. While not extremely complex, it requires careful validation and error handling to ensure a good user experience."
+    },
+    {
+      "taskId": 5,
+      "taskTitle": "AI 판정 시스템 구현",
+      "complexityScore": 9,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "Create detailed subtasks for implementing the AI judging system, including AI model selection, evaluation criteria definition, Edge Function implementation, battle narration generation, and result processing logic.",
+      "reasoning": "This is one of the most complex tasks as it involves integrating with AI models, implementing custom evaluation logic, and creating Edge Functions. The system needs to evaluate text based on multiple criteria, generate creative battle narrations, and handle the results appropriately."
+    },
+    {
+      "taskId": 6,
+      "taskTitle": "실시간 매칭 시스템 구현",
+      "complexityScore": 8,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the real-time matching system implementation into subtasks covering WebSocket server setup, queue management, matchmaking algorithm, client-side connection handling, and error recovery mechanisms.",
+      "reasoning": "Real-time systems are inherently complex due to their stateful nature and concurrency challenges. This task requires implementing WebSockets, managing a matchmaking queue, handling disconnections, and ensuring the system remains responsive under load."
+    },
+    {
+      "taskId": 7,
+      "taskTitle": "전투 결과 처리 및 해설 시스템 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Create subtasks for the battle result processing system, including ELO rating calculation, statistics updates, battle narration display, history recording, and UI implementation for different outcome scenarios.",
+      "reasoning": "This task involves implementing complex business logic for battle outcomes, including ELO rating calculations and statistics updates. It also requires creating an engaging UI to display battle results and narrations, with proper error handling for various scenarios."
+    },
+    {
+      "taskId": 8,
+      "taskTitle": "랭킹 시스템 구현",
+      "complexityScore": 6,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Divide the ranking system implementation into subtasks covering daily/all-time league separation, ranking calculation logic, pagination implementation, and detailed player statistics display.",
+      "reasoning": "The ranking system requires implementing separate leagues with different calculation methods, efficient database queries for pagination, and a responsive UI. While not the most complex feature, it requires careful consideration of performance and data organization."
+    },
+    {
+      "taskId": 9,
+      "taskTitle": "코인 시스템 및 결제 기능 구현",
+      "complexityScore": 8,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down the coin system and payment feature implementation into subtasks covering payment gateway integration, coin package definition, transaction recording, cooldown skip functionality, and security measures.",
+      "reasoning": "Implementing payment systems is complex due to security requirements, third-party integrations, and the need for robust error handling. This task involves integrating with Stripe, managing transactions, implementing webhooks, and ensuring data consistency across payment flows."
+    },
+    {
+      "taskId": 10,
+      "taskTitle": "SNS 공유 기능 구현",
+      "complexityScore": 5,
+      "recommendedSubtasks": 4,
+      "expansionPrompt": "Create subtasks for implementing the social sharing feature, including share link generation, platform-specific integration, Open Graph metadata optimization, and share analytics tracking.",
+      "reasoning": "This task involves integrating with multiple social platforms and optimizing content for sharing. While not extremely complex technically, it requires attention to detail for proper metadata, preview images, and tracking across different platforms."
+    },
+    {
+      "taskId": 11,
+      "taskTitle": "푸시 알림 시스템 구현",
+      "complexityScore": 7,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide the push notification system implementation into subtasks covering service worker setup, subscription management, notification trigger events, content personalization, and delivery tracking.",
+      "reasoning": "Push notification systems are complex due to browser permissions, service worker lifecycle management, and the need to handle various notification scenarios. This task requires implementing Web Push API, managing subscriptions, and ensuring notifications are relevant and timely."
+    },
+    {
+      "taskId": 12,
+      "taskTitle": "성능 최적화 및 배포 설정",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Create detailed subtasks for performance optimization and deployment, including code splitting, image optimization, caching strategy, serverless function optimization, CI/CD setup, and monitoring configuration.",
+      "reasoning": "Performance optimization and deployment configuration involve multiple technical aspects across the entire application. This task requires implementing various optimization techniques, setting up proper deployment pipelines, and configuring monitoring systems to ensure the application performs well in production."
+    }
+  ]
+}
